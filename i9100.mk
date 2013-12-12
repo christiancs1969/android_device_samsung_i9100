@@ -28,7 +28,9 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
+    ro.sf.lcd_density=240 \
+    dalvik.vm.dexopt-cache-only=0 \
+    dalvik.vm.dexopt-data-only=1
 
 # Sensors
 PRODUCT_PACKAGES += \
